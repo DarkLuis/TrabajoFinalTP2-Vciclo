@@ -24,8 +24,20 @@ import logica.AsignadoBL;
  */
 public class FrmListarAsignado extends javax.swing.JFrame {
 
-    /** Creates new form FrmListarAsignado */
-    public FrmListarAsignado(JFrame frmPrincipal) {
+    
+    private static FrmListarAsignado obj=null;
+    
+    public static FrmListarAsignado getInstanciaUnica() {
+
+        if (obj == null) {
+            obj = new FrmListarAsignado(obj);
+        }
+        return obj;
+    }
+    /**
+     * Creates new form FrmSucursal
+     */
+    private FrmListarAsignado(JFrame frmPrincipal) {
         initComponents();
         setLocationRelativeTo(frmPrincipal);
     }

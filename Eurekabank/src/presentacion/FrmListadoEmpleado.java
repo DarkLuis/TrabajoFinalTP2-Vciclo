@@ -21,8 +21,20 @@ import logica.EmpleadoBL;
  */
 public class FrmListadoEmpleado extends javax.swing.JFrame {
 
-    /** Creates new form FrmListadoEmpleado */
-    public FrmListadoEmpleado(JFrame frmPrincipal) {
+    
+    private static FrmListadoEmpleado obj=null;
+    
+    public static FrmListadoEmpleado getInstanciaUnica() {
+
+        if (obj == null) {
+            obj = new FrmListadoEmpleado(obj);
+        }
+        return obj;
+    }
+    /**
+     * Creates new form FrmSucursal
+     */
+    private  FrmListadoEmpleado(JFrame frmPrincipal) {
         initComponents();
         setLocationRelativeTo(frmPrincipal);
     }

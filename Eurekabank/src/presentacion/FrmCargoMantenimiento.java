@@ -19,8 +19,19 @@ import static javax.swing.JOptionPane.showMessageDialog;
  */
 public class FrmCargoMantenimiento extends javax.swing.JFrame {
 
-    /** Creates new form FrmCargoMantenimiento */
-    public FrmCargoMantenimiento(JFrame parent) {
+    private static FrmCargoMantenimiento obj=null;
+    
+    public static FrmCargoMantenimiento getInstanciaUnica() {
+
+        if (obj == null) {
+            obj = new FrmCargoMantenimiento(obj);
+        }
+        return obj;
+    }
+    /**
+     * Creates new form FrmSucursal
+     */
+    private FrmCargoMantenimiento(JFrame parent) {
         initComponents();
         setLocationRelativeTo(parent);
     }

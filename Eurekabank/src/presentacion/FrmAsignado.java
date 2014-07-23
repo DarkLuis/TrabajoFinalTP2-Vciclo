@@ -9,7 +9,6 @@
  * Created on 13/07/2012, 05:14:41 PM
  */
 package presentacion;
-
 import java.util.GregorianCalendar;
 import javax.swing.*;
 import logica.AsignadoBL;
@@ -21,8 +20,20 @@ import static javax.swing.JOptionPane.showMessageDialog;
  */
 public class FrmAsignado extends javax.swing.JFrame {
 
-    /** Creates new form FrmAsignado */
-    public FrmAsignado(JFrame frmPrincipal) {
+    
+    private static FrmAsignado obj=null;
+    
+    public static FrmAsignado getInstanciaUnica() {
+
+        if (obj == null) {
+            obj = new FrmAsignado(obj);
+        }
+        return obj;
+    }
+    /**
+     * Creates new form FrmSucursal
+     */
+    private  FrmAsignado(JFrame frmPrincipal) {
         initComponents();
         setLocationRelativeTo(frmPrincipal);
     }

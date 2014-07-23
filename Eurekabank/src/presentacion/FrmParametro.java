@@ -19,8 +19,19 @@ import static javax.swing.JOptionPane.showMessageDialog;
  */
 public class FrmParametro extends javax.swing.JFrame {
 
-    /** Creates new form FrmParametro */
-    public FrmParametro(JFrame parent) {
+    private static FrmParametro obj=null;
+    
+    public static FrmParametro getInstanciaUnica() {
+
+        if (obj == null) {
+            obj = new FrmParametro(obj);
+        }
+        return obj;
+    }
+    /**
+     * Creates new form FrmSucursal
+     */
+    private  FrmParametro(JFrame parent) {
         initComponents();
         setLocationRelativeTo(parent);
     }

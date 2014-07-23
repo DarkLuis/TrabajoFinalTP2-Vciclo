@@ -19,8 +19,20 @@ import static javax.swing.JOptionPane.showMessageDialog;
  */
 public class FrmCostoMovimiento extends javax.swing.JFrame {
 
-    /** Creates new form FrmCostoMovimiento */
-    public FrmCostoMovimiento(JFrame parent) {
+    
+    private static FrmCostoMovimiento obj=null;
+    
+    public static FrmCostoMovimiento getInstanciaUnica() {
+
+        if (obj == null) {
+            obj = new FrmCostoMovimiento(obj);
+        }
+        return obj;
+    }
+    /**
+     * Creates new form FrmSucursal
+     */
+    private FrmCostoMovimiento(JFrame parent) {
         initComponents();
         setLocationRelativeTo(parent);
     }

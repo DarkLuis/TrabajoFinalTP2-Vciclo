@@ -26,8 +26,19 @@ import logica.MonedaBL;
  */
 public class FrmListarMonedas extends javax.swing.JFrame {
 
-    /** Creates new form FrmListarMonedas */
-    public FrmListarMonedas(JFrame frmPrincipal) {
+    private static FrmListarMonedas obj=null;
+    
+    public static FrmListarMonedas getInstanciaUnica() {
+
+        if (obj == null) {
+            obj = new FrmListarMonedas(obj);
+        }
+        return obj;
+    }
+    /**
+     * Creates new form FrmSucursal
+     */
+    private FrmListarMonedas(JFrame frmPrincipal) {
         initComponents();
         setLocationRelativeTo(frmPrincipal);
     }

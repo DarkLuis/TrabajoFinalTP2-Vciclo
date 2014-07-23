@@ -25,8 +25,19 @@ import logica.MovimientoBL;
  */
 public class FrmListarMovimiento extends javax.swing.JFrame {
 
-    /** Creates new form FrmListarMovimiento */
-    public FrmListarMovimiento(JFrame parent) {
+    private static FrmListarMovimiento obj=null;
+    
+    public static FrmListarMovimiento getInstanciaUnica() {
+
+        if (obj == null) {
+            obj = new FrmListarMovimiento(obj);
+        }
+        return obj;
+    }
+    /**
+     * Creates new form FrmSucursal
+     */
+    private FrmListarMovimiento(JFrame parent) {
         initComponents();
         setLocationRelativeTo(parent);
     }

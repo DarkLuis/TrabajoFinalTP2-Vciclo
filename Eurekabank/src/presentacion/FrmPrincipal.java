@@ -466,23 +466,19 @@ public class FrmPrincipal extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void mnuiClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnuiClienteActionPerformed
-        FrmCliente frmCliente = new FrmCliente(this);
-        frmCliente.setVisible(true);
+        FrmCliente.getInstanciaUnica().setVisible(true);
     }//GEN-LAST:event_mnuiClienteActionPerformed
 
     private void mnuiEmpleadoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnuiEmpleadoActionPerformed
-        FrmEmpleado frmEmpleado = new FrmEmpleado(this);
-        frmEmpleado.setVisible(true);
+        FrmEmpleado.getInstanciaUnica().setVisible(true);
     }//GEN-LAST:event_mnuiEmpleadoActionPerformed
 
     private void mnuiSucursalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnuiSucursalActionPerformed
-        FrmSucursal frmSucursal = new FrmSucursal(this);
-        frmSucursal.setVisible(true);
+        FrmSucursal.getInstanciaUnica().setVisible(true);
     }//GEN-LAST:event_mnuiSucursalActionPerformed
 
     private void mnuiTipoMActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnuiTipoMActionPerformed
-        FrmTipoMovimiento frmTipoMovimiento = new FrmTipoMovimiento(this);
-        frmTipoMovimiento.setVisible(true);
+        FrmTipoMovimiento.getInstanciaUnica().setVisible(true);
     }//GEN-LAST:event_mnuiTipoMActionPerformed
 
     private void mnuiSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnuiSalirActionPerformed
@@ -490,24 +486,19 @@ public class FrmPrincipal extends javax.swing.JFrame {
     }//GEN-LAST:event_mnuiSalirActionPerformed
 
     private void mnuiClienteLActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnuiClienteLActionPerformed
-        FrmListadoCliente frmListadoCliente = new FrmListadoCliente(this);
-        frmListadoCliente.setVisible(true);
+        FrmListadoCliente.getInstanciaUnica().setVisible(true);
     }//GEN-LAST:event_mnuiClienteLActionPerformed
 
     private void mnuiEmpleadoLActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnuiEmpleadoLActionPerformed
-        FrmListadoEmpleado frmListadoEmpleado = new FrmListadoEmpleado(this);
-        frmListadoEmpleado.setVisible(true);
+        FrmListadoEmpleado.getInstanciaUnica().setVisible(true);
     }//GEN-LAST:event_mnuiEmpleadoLActionPerformed
 
     private void mnuiSucursalLActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnuiSucursalLActionPerformed
-        FrmListadoSucursal frmListadoSucursal = new FrmListadoSucursal(this);
-        frmListadoSucursal.setVisible(true);
+        FrmListadoSucursal.getInstanciaUnica().setVisible(true);
     }//GEN-LAST:event_mnuiSucursalLActionPerformed
 
     private void mnuiTipoMLActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnuiTipoMLActionPerformed
-        FrmListadoTipoMovimiento frmListadoTipoMovimiento =
-                new FrmListadoTipoMovimiento(this);
-        frmListadoTipoMovimiento.setVisible(true);
+        FrmListadoTipoMovimiento.getInstanciaUnica().setVisible(true);
     }//GEN-LAST:event_mnuiTipoMLActionPerformed
 
     private void mnuiClienteRActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnuiClienteRActionPerformed
@@ -535,33 +526,27 @@ public class FrmPrincipal extends javax.swing.JFrame {
     }//GEN-LAST:event_mnuiTipoMRActionPerformed
 
 private void mnuiParametroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnuiParametroActionPerformed
-        FrmParametro frmParametro = new FrmParametro(this);
-        frmParametro.setVisible(true);
+        FrmParametro.getInstanciaUnica().setVisible(true);
 }//GEN-LAST:event_mnuiParametroActionPerformed
 
 private void mnuiContadorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnuiContadorActionPerformed
-        FrmContador frmContador = new FrmContador(this);
-        frmContador.setVisible(true);
+        FrmContador.getInstanciaUnica().setVisible(true);
 }//GEN-LAST:event_mnuiContadorActionPerformed
 
 private void mnuiCuentaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnuiCuentaActionPerformed
-        FrmCuenta frmCuenta = new FrmCuenta(this);
-        frmCuenta.setVisible(true);
+        FrmCuenta.getInstanciaUnica().setVisible(true);
 }//GEN-LAST:event_mnuiCuentaActionPerformed
 
 private void mnuiParametroLActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnuiParametroLActionPerformed
-        FrmListaParametro frmListaParametro = new FrmListaParametro(this);
-        frmListaParametro.setVisible(true);
+        FrmListaParametro.getInstanciaUnica().setVisible(true);
 }//GEN-LAST:event_mnuiParametroLActionPerformed
 
 private void mnuiContadorLActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnuiContadorLActionPerformed
-        FrmListaContador frmListaContador = new FrmListaContador(this);
-        frmListaContador.setVisible(true);
+        FrmListaContador.getInstanciaUnica().setVisible(true);
 }//GEN-LAST:event_mnuiContadorLActionPerformed
 
 private void mnuiCuentaLActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnuiCuentaLActionPerformed
-        FrmListaCuenta frmListaCuenta = new FrmListaCuenta(this);
-        frmListaCuenta.setVisible(true);
+        FrmListaCuenta.getInstanciaUnica().setVisible(true);
 }//GEN-LAST:event_mnuiCuentaLActionPerformed
 
 private void mnuiParametroRActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnuiParametroRActionPerformed
@@ -583,58 +568,47 @@ private void mnuiCuentaRActionPerformed(java.awt.event.ActionEvent evt) {//GEN-F
 }//GEN-LAST:event_mnuiCuentaRActionPerformed
 
 private void mnuiCargoMActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnuiCargoMActionPerformed
-        FrmCargoMantenimiento frmCM = new FrmCargoMantenimiento(this);
-        frmCM.setVisible(true);
+        FrmCargoMantenimiento.getInstanciaUnica().setVisible(true);
 }//GEN-LAST:event_mnuiCargoMActionPerformed
 
 private void mnuiInteresMActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnuiInteresMActionPerformed
-        FrmInteresMensual frmIM = new FrmInteresMensual(this);
-        frmIM.setVisible(true);
+        FrmInteresMensual.getInstanciaUnica().setVisible(true);
 }//GEN-LAST:event_mnuiInteresMActionPerformed
 
 private void mnuiCostoMActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnuiCostoMActionPerformed
-        FrmCostoMovimiento frmCMo = new FrmCostoMovimiento(this);
-        frmCMo.setVisible(true);
+        FrmCostoMovimiento.getInstanciaUnica().setVisible(true);
 }//GEN-LAST:event_mnuiCostoMActionPerformed
 
 private void mnuiMovimientoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnuiMovimientoActionPerformed
-        FrmMovimiento frmM = new FrmMovimiento(this);
-        frmM.setVisible(true);
+        FrmMovimiento.getInstanciaUnica().setVisible(true);
 }//GEN-LAST:event_mnuiMovimientoActionPerformed
 
 private void mnuiAsignadoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnuiAsignadoActionPerformed
-        FrmAsignado frmA = new FrmAsignado(this);
-        frmA.setVisible(true);
+        FrmAsignado.getInstanciaUnica().setVisible(true);
 }//GEN-LAST:event_mnuiAsignadoActionPerformed
 
 private void mnuiMonedaLActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnuiMonedaLActionPerformed
-        FrmListarMonedas frmListaM = new FrmListarMonedas(this);
-        frmListaM.setVisible(true);
+        FrmListarMonedas.getInstanciaUnica().setVisible(true);
 }//GEN-LAST:event_mnuiMonedaLActionPerformed
 
 private void mnuiCargoMLActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnuiCargoMLActionPerformed
-        FrmListarCargoMantenimiento frmListaCM = new FrmListarCargoMantenimiento(this);
-        frmListaCM.setVisible(true);
+        FrmListarCargoMantenimiento.getInstanciaUnica().setVisible(true);
 }//GEN-LAST:event_mnuiCargoMLActionPerformed
 
 private void mnuiInteresMLActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnuiInteresMLActionPerformed
-        FrmListarInteresMensual frmListaIM = new FrmListarInteresMensual(this);
-        frmListaIM.setVisible(true);
+        FrmListarInteresMensual.getInstanciaUnica().setVisible(true);
 }//GEN-LAST:event_mnuiInteresMLActionPerformed
 
 private void mnuiCostoMLActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnuiCostoMLActionPerformed
-        FrmListarCostoMovimiento frmListaCM = new FrmListarCostoMovimiento(this);
-        frmListaCM.setVisible(true);
+        FrmListarCostoMovimiento.getInstanciaUnica().setVisible(true);
 }//GEN-LAST:event_mnuiCostoMLActionPerformed
 
 private void mnuiMovimientoLActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnuiMovimientoLActionPerformed
-        FrmListarMovimiento frmListaM = new FrmListarMovimiento(this);
-        frmListaM.setVisible(true);
+        FrmListarMovimiento.getInstanciaUnica().setVisible(true);
 }//GEN-LAST:event_mnuiMovimientoLActionPerformed
 
 private void mnuiAsignadoLActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnuiAsignadoLActionPerformed
-        FrmListarAsignado frmListaA = new FrmListarAsignado(this);
-        frmListaA.setVisible(true);
+        FrmListarAsignado.getInstanciaUnica().setVisible(true);
 }//GEN-LAST:event_mnuiAsignadoLActionPerformed
 
 private void mnuiMonedasRActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnuiMonedasRActionPerformed
@@ -674,8 +648,7 @@ private void mnuiAsignadoRActionPerformed(java.awt.event.ActionEvent evt) {//GEN
 }//GEN-LAST:event_mnuiAsignadoRActionPerformed
 
 private void mnuiMonedaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnuiMonedaActionPerformed
-        FrmMoneda frmM = new FrmMoneda(this);
-        frmM.setVisible(true);
+        FrmMoneda.getInstanciaUnica().setVisible(true);
 }//GEN-LAST:event_mnuiMonedaActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed

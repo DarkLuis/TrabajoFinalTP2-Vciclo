@@ -21,8 +21,19 @@ import static javax.swing.JOptionPane.showMessageDialog;
  */
 public class FrmTipoMovimiento extends javax.swing.JFrame {
 
-    /** Creates new form FrmTipoMovimiento */
-    public FrmTipoMovimiento(JFrame frmPrincipal) {
+    private static FrmTipoMovimiento obj=null;
+    
+    public static FrmTipoMovimiento getInstanciaUnica() {
+
+        if (obj == null) {
+            obj = new FrmTipoMovimiento(obj);
+        }
+        return obj;
+    }
+    /**
+     * Creates new form FrmSucursal
+     */
+    private  FrmTipoMovimiento(JFrame frmPrincipal) {
         initComponents();
         setLocationRelativeTo(frmPrincipal);
     }

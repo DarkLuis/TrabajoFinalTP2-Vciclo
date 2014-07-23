@@ -19,8 +19,20 @@ import static javax.swing.JOptionPane.showMessageDialog;
  */
 public class FrmEmpleado extends javax.swing.JFrame {
 
-    /** Creates new form FrmEmpleado */
-    public FrmEmpleado(JFrame frmPrincipal) {
+    
+    private static FrmEmpleado obj=null;
+    
+    public static FrmEmpleado getInstanciaUnica() {
+
+        if (obj == null) {
+            obj = new FrmEmpleado(obj);
+        }
+        return obj;
+    }
+    /**
+     * Creates new form FrmSucursal
+     */
+    private  FrmEmpleado(JFrame frmPrincipal) {
         initComponents();
         setLocationRelativeTo(frmPrincipal);
     }

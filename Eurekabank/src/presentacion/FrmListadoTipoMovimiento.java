@@ -21,8 +21,20 @@ import logica.TipoMovimientoBL;
  */
 public class FrmListadoTipoMovimiento extends javax.swing.JFrame {
 
-    /** Creates new form FrmListadoTipoMovimiento */
-    public FrmListadoTipoMovimiento(JFrame frmPrincipal) {
+    
+    private static FrmListadoTipoMovimiento obj=null;
+    
+    public static FrmListadoTipoMovimiento getInstanciaUnica() {
+
+        if (obj == null) {
+            obj = new FrmListadoTipoMovimiento(obj);
+        }
+        return obj;
+    }
+    /**
+     * Creates new form FrmSucursal
+     */
+    private FrmListadoTipoMovimiento(JFrame frmPrincipal) {
         initComponents();
         setLocationRelativeTo(frmPrincipal);
     }

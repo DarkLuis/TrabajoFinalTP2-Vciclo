@@ -21,8 +21,19 @@ import logica.ParametroBL;
  */
 public class FrmListaParametro extends javax.swing.JFrame {
 
-    /** Creates new form FrmListaParametro */
-    public FrmListaParametro(JFrame parent) {
+    private static FrmListaParametro obj=null;
+    
+    public static FrmListaParametro getInstanciaUnica() {
+
+        if (obj == null) {
+            obj = new FrmListaParametro(obj);
+        }
+        return obj;
+    }
+    /**
+     * Creates new form FrmSucursal
+     */
+    private FrmListaParametro(JFrame parent) {
         initComponents();
         setLocationRelativeTo(parent);
     }

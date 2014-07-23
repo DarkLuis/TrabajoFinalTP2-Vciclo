@@ -21,8 +21,20 @@ import logica.SucursalBL;
  */
 public class FrmListadoSucursal extends javax.swing.JFrame {
 
-    /** Creates new form FrmListadoSucursal */
-    public FrmListadoSucursal(JFrame frmPrincipal) {
+    
+    private static FrmListadoSucursal obj=null;
+    
+    public static FrmListadoSucursal getInstanciaUnica() {
+
+        if (obj == null) {
+            obj = new FrmListadoSucursal(obj);
+        }
+        return obj;
+    }
+    /**
+     * Creates new form FrmSucursal
+     */
+    private FrmListadoSucursal(JFrame frmPrincipal) {
         initComponents();
         setLocationRelativeTo(frmPrincipal);
     }

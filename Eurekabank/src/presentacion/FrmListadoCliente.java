@@ -21,8 +21,20 @@ import logica.ClienteBL;
  */
 public class FrmListadoCliente extends javax.swing.JFrame {
 
-    /** Creates new form FrmListadoCliente */
-    public FrmListadoCliente(JFrame frmPrincipal) {
+    
+    private static FrmListadoCliente obj=null;
+    
+    public static FrmListadoCliente getInstanciaUnica() {
+
+        if (obj == null) {
+            obj = new FrmListadoCliente(obj);
+        }
+        return obj;
+    }
+    /**
+     * Creates new form FrmSucursal
+     */
+    private FrmListadoCliente(JFrame frmPrincipal) {
         initComponents();
         setLocationRelativeTo(frmPrincipal);
     }

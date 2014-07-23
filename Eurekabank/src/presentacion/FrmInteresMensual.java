@@ -19,8 +19,20 @@ import static javax.swing.JOptionPane.showMessageDialog;
  */
 public class FrmInteresMensual extends javax.swing.JFrame {
 
-    /** Creates new form FrmInteresMensual */
-    public FrmInteresMensual(JFrame parent) {
+    
+    private static FrmInteresMensual obj=null;
+    
+    public static FrmInteresMensual getInstanciaUnica() {
+
+        if (obj == null) {
+            obj = new FrmInteresMensual(obj);
+        }
+        return obj;
+    }
+    /**
+     * Creates new form FrmSucursal
+     */
+    private FrmInteresMensual(JFrame parent) {
         initComponents();
         setLocationRelativeTo(parent);
     }

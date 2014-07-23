@@ -22,8 +22,19 @@ import logica.InteresMensualBL;
  */
 public class FrmListarInteresMensual extends javax.swing.JFrame {
 
-    /** Creates new form FrmListarInteresMensual */
-    public FrmListarInteresMensual(JFrame frmPrincipal) {
+    private static FrmListarInteresMensual obj=null;
+    
+    public static FrmListarInteresMensual getInstanciaUnica() {
+
+        if (obj == null) {
+            obj = new FrmListarInteresMensual(obj);
+        }
+        return obj;
+    }
+    /**
+     * Creates new form FrmSucursal
+     */
+    private FrmListarInteresMensual(JFrame frmPrincipal) {
         initComponents();
         setLocationRelativeTo(frmPrincipal);
     }

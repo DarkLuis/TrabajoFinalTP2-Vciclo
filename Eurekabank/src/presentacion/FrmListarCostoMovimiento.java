@@ -22,8 +22,20 @@ import logica.CostoMovimientoBL;
  */
 public class FrmListarCostoMovimiento extends javax.swing.JFrame {
 
-    /** Creates new form FrmListarCostoMovimiento */
-    public FrmListarCostoMovimiento(JFrame frmPrincipal) {
+    
+    private static FrmListarCostoMovimiento obj=null;
+    
+    public static FrmListarCostoMovimiento getInstanciaUnica() {
+
+        if (obj == null) {
+            obj = new FrmListarCostoMovimiento(obj);
+        }
+        return obj;
+    }
+    /**
+     * Creates new form FrmSucursal
+     */
+    private FrmListarCostoMovimiento(JFrame frmPrincipal) {
         initComponents();
         setLocationRelativeTo(frmPrincipal);
     }

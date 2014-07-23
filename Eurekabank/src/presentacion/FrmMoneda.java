@@ -21,8 +21,19 @@ import static javax.swing.JOptionPane.showMessageDialog;
  */
 public class FrmMoneda extends javax.swing.JFrame {
 
-    /** Creates new form FrmMoneda */
-    public FrmMoneda(JFrame parent) {
+    private static FrmMoneda obj=null;
+    
+    public static FrmMoneda getInstanciaUnica() {
+
+        if (obj == null) {
+            obj = new FrmMoneda(obj);
+        }
+        return obj;
+    }
+    /**
+     * Creates new form FrmSucursal
+     */
+    private FrmMoneda(JFrame parent) {
         initComponents();
         setLocationRelativeTo(parent);
     }

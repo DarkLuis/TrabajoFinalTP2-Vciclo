@@ -19,8 +19,20 @@ import static javax.swing.JOptionPane.showMessageDialog;
  */
 public class FrmCliente extends javax.swing.JFrame {
 
-    /** Creates new form FrmCliente */
-    public FrmCliente(JFrame frmPrincipal) {
+    
+    private static FrmCliente obj=null;
+    
+    public static FrmCliente getInstanciaUnica() {
+
+        if (obj == null) {
+            obj = new FrmCliente(obj);
+        }
+        return obj;
+    }
+    /**
+     * Creates new form FrmSucursal
+     */
+    private FrmCliente(JFrame frmPrincipal) {
         initComponents();
         setLocationRelativeTo(frmPrincipal);
     }

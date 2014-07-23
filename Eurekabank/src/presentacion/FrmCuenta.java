@@ -20,8 +20,20 @@ import static javax.swing.JOptionPane.showMessageDialog;
  */
 public class FrmCuenta extends javax.swing.JFrame {
 
-    /** Creates new form FrmCuenta */
-    public FrmCuenta (JFrame parent) {
+    
+    private static FrmCuenta obj=null;
+    
+    public static FrmCuenta getInstanciaUnica() {
+
+        if (obj == null) {
+            obj = new FrmCuenta(obj);
+        }
+        return obj;
+    }
+    /**
+     * Creates new form FrmSucursal
+     */
+    private  FrmCuenta (JFrame parent) {
         initComponents();
         setLocationRelativeTo(parent);
     }

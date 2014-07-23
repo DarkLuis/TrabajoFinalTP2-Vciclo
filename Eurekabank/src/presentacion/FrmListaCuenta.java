@@ -21,8 +21,20 @@ import logica.*;
  */
 public class FrmListaCuenta extends javax.swing.JFrame {
 
-    /** Creates new form FrmListaCuenta */
-    public FrmListaCuenta(JFrame parent) {
+    
+    private static FrmListaCuenta obj=null;
+    
+    public static FrmListaCuenta getInstanciaUnica() {
+
+        if (obj == null) {
+            obj = new FrmListaCuenta(obj);
+        }
+        return obj;
+    }
+    /**
+     * Creates new form FrmSucursal
+     */
+    private  FrmListaCuenta(JFrame parent) {
         initComponents();
         setLocationRelativeTo(parent);
     }

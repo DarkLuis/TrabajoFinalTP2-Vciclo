@@ -19,8 +19,20 @@ import static javax.swing.JOptionPane.showMessageDialog;
  */
 public class FrmContador extends javax.swing.JFrame {
 
-    /** Creates new form FrmContador */
-    public FrmContador(JFrame parent) {
+    
+    private static FrmContador obj=null;
+    
+    public static FrmContador getInstanciaUnica() {
+
+        if (obj == null) {
+            obj = new FrmContador(obj);
+        }
+        return obj;
+    }
+    /**
+     * Creates new form FrmSucursal
+     */
+    private  FrmContador(JFrame parent) {
         initComponents();
         setLocationRelativeTo(parent);
     }

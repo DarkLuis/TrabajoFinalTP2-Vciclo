@@ -22,8 +22,20 @@ import logica.CargoMantenimientoBL;
  */
 public class FrmListarCargoMantenimiento extends javax.swing.JFrame {
 
-    /** Creates new form FrmListarCargoMantenimiento */
-    public FrmListarCargoMantenimiento(JFrame frmPrincipal) {
+    
+    private static FrmListarCargoMantenimiento obj=null;
+    
+    public static FrmListarCargoMantenimiento getInstanciaUnica() {
+
+        if (obj == null) {
+            obj = new FrmListarCargoMantenimiento(obj);
+        }
+        return obj;
+    }
+    /**
+     * Creates new form FrmSucursal
+     */
+    private FrmListarCargoMantenimiento(JFrame frmPrincipal) {
         initComponents();
         setLocationRelativeTo(frmPrincipal);
     }
