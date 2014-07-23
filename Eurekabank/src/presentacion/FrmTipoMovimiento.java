@@ -100,7 +100,10 @@ public class FrmTipoMovimiento extends javax.swing.JFrame {
 
         btnSalir.setFont(new java.awt.Font("Vrinda", 1, 14)); // NOI18N
         btnSalir.setForeground(new java.awt.Color(0, 102, 0));
+        btnSalir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/salir.png"))); // NOI18N
         btnSalir.setText("Salir");
+        btnSalir.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnSalir.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         btnSalir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnSalirActionPerformed(evt);
@@ -109,8 +112,11 @@ public class FrmTipoMovimiento extends javax.swing.JFrame {
 
         btnInsertar.setFont(new java.awt.Font("Vrinda", 1, 14)); // NOI18N
         btnInsertar.setForeground(new java.awt.Color(0, 102, 0));
+        btnInsertar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/guardar.png"))); // NOI18N
         btnInsertar.setText("Insertar");
         btnInsertar.setEnabled(false);
+        btnInsertar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnInsertar.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         btnInsertar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnInsertarActionPerformed(evt);
@@ -119,7 +125,10 @@ public class FrmTipoMovimiento extends javax.swing.JFrame {
 
         btnNuevo.setFont(new java.awt.Font("Vrinda", 1, 14)); // NOI18N
         btnNuevo.setForeground(new java.awt.Color(0, 102, 0));
+        btnNuevo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/nuevo.png"))); // NOI18N
         btnNuevo.setText("Nuevo");
+        btnNuevo.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnNuevo.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         btnNuevo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnNuevoActionPerformed(evt);
@@ -154,7 +163,7 @@ public class FrmTipoMovimiento extends javax.swing.JFrame {
                                 .addComponent(btnInsertar)
                                 .addGap(29, 29, 29)
                                 .addComponent(btnSalir)))))
-                .addGap(32, 32, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -175,12 +184,13 @@ public class FrmTipoMovimiento extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel4)
                     .addComponent(txtEstado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(44, 44, 44)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnNuevo, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnInsertar, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnSalir, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(27, Short.MAX_VALUE))
+                .addGap(35, 35, 35)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(btnNuevo)
+                        .addComponent(btnInsertar))
+                    .addComponent(btnSalir))
+                .addContainerGap(22, Short.MAX_VALUE))
         );
 
         pack();
