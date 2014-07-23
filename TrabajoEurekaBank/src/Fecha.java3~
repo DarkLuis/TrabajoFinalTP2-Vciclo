@@ -1,0 +1,72 @@
+
+
+// <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+// #[regen=yes,id=DCE.1F48EF36-5EFB-334A-F3B8-8207691B5C19]
+// </editor-fold> 
+public class Fecha {
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,id=DCE.29E479BE-D516-98DD-0202-7C24A5075419]
+    // </editor-fold> 
+    private int dia;
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,id=DCE.A15178BF-E8DB-B61F-72D3-21E0521F83EF]
+    // </editor-fold> 
+    private int mes;
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,id=DCE.6B81CE2C-C459-A0E6-5C8A-B8AEC661CD9E]
+    // </editor-fold> 
+    private int aÃ±o
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,id=DCE.B02E4E0C-CB27-F1DE-0B6B-2C0736F4E0B9]
+    // </editor-fold> 
+    public Fecha (){
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.68869EE1-FEA5-7760-4B6D-C0CB14AF17A5]
+    // </editor-fold> 
+    public int getAÃ±o ({
+        return año;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.46F7E089-7946-0539-D6A0-CD4DDCF4D239]
+    // </editor-fold> 
+    public void setAÃ±o (int v{
+        this.año = val;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.4EBD62EB-A255-D3CF-17EA-8846FD002040]
+    // </editor-fold> 
+    public int getDi{
+        return dia;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.9DBCA3E9-6CC5-E2D9-3EEA-5BDA544235FF]
+    // </editor-fold> 
+    public void setDia (int {
+        this.dia = val;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.D04C54B3-22C4-520E-0801-4C2D0C3A6072]
+    // </editor-fold> 
+    public int getMe{
+        return mes;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.2FD7D385-6903-CF1D-FF27-60092D44E942]
+    // </editor-fold> 
+    public void setMes (int {
+        this.mes = val;
+    }
+
+}
+

@@ -1,0 +1,128 @@
+
+public class Cuenta {
+
+    private String cuenCodigo;
+
+    private String moneCodigo;
+
+    private String sucuCodigo;
+
+    private String emplCreaCuenta;
+
+    private String clieCodigo;
+
+    private float cuenSaldo;
+
+    private Fecha cuenFechaCreacion;
+
+    private String cuenEstado;
+
+    private int cuenContMonto;
+
+    private String cuenClave;
+
+    private Fecha mEmpleado;
+
+    private Fecha mEmpleado1;
+
+    public Cuenta () {
+    }
+
+    public String getClieCodigo () {
+        return clieCodigo;
+    }
+
+    public void setClieCodigo (String val) {
+        this.clieCodigo = val;
+    }
+
+    public String getCuenClave () {
+        return cuenClave;
+    }
+
+    public void setCuenClave (String val) {
+        this.cuenClave = val;
+    }
+
+    public String getCuenCodigo () {
+        return cuenCodigo;
+    }
+
+    public void setCuenCodigo (String val) {
+        this.cuenCodigo = val;
+    }
+
+    public int getCuenContMonto () {
+        return cuenContMonto;
+    }
+
+    public void setCuenContMonto (int val) {
+        this.cuenContMonto = val;
+    }
+
+    public String getCuenEstado () {
+        return cuenEstado;
+    }
+
+    public void setCuenEstado (String val) {
+        this.cuenEstado = val;
+    }
+
+    public Fecha getCuenFechaCreacion () {
+        return cuenFechaCreacion;
+    }
+
+    public void setCuenFechaCreacion (Fecha val) {
+        this.cuenFechaCreacion = val;
+    }
+
+    public float getCuenSaldo () {
+        return cuenSaldo;
+    }
+
+    public void setCuenSaldo (float val) {
+        this.cuenSaldo = val;
+    }
+
+    public String getEmplCreaCuenta () {
+        return emplCreaCuenta;
+    }
+
+    public void setEmplCreaCuenta (String val) {
+        this.emplCreaCuenta = val;
+    }
+
+    public Fecha getEmpleado () {
+        return mEmpleado;
+    }
+
+    public void setEmpleado (Fecha val) {
+        this.mEmpleado = val;
+    }
+
+    public Fecha getEmpleado1 () {
+        return mEmpleado1;
+    }
+
+    public void setEmpleado1 (Fecha val) {
+        this.mEmpleado1 = val;
+    }
+
+    public String getMoneCodigo () {
+        return moneCodigo;
+    }
+
+    public void setMoneCodigo (String val) {
+        this.moneCodigo = val;
+    }
+
+    public String getSucuCodigo () {
+        return sucuCodigo;
+    }
+
+    public void setSucuCodigo (String val) {
+        this.sucuCodigo = val;
+    }
+
+}
+

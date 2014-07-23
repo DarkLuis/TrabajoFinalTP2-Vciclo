@@ -1,0 +1,167 @@
+
+
+// <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+// #[regen=yes,id=DCE.851FD216-4C68-112A-CD00-326AEF1E9033]
+// </editor-fold> 
+public class Cliente {
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,id=DCE.AD297DCD-6B12-2C51-C15D-3C8C36BE3944]
+    // </editor-fold> 
+    private String cliePaterno;
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,id=DCE.B42103A3-04A7-FC8F-E6AE-6F477A89A77C]
+    // </editor-fold> 
+    private String clieMaterno;
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,id=DCE.3F1C515E-1819-20B6-DB23-EB486E53A259]
+    // </editor-fold> 
+    private String clieNombre;
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,id=DCE.D85431E5-A745-E58C-CA65-7A7A521D9F48]
+    // </editor-fold> 
+    private String clieDNI;
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,id=DCE.56E42431-70B7-73FF-0821-389B23FAE845]
+    // </editor-fold> 
+    private String clieCiudad;
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,id=DCE.73C7D5EC-19F8-9CE9-EECD-B8CFAFE7FB4E]
+    // </editor-fold> 
+    private String clieDireccion;
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,id=DCE.A13C2A44-123B-AAF3-76A3-B350DA786FD2]
+    // </editor-fold> 
+    private String clieTelefono;
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,id=DCE.7EA4FC35-D580-A720-D45C-800BA7170734]
+    // </editor-fold> 
+    private String clieEmail;
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,id=DCE.BE219216-7B08-8539-231D-E9820F24A96C]
+    // </editor-fold> 
+    public Cliente () {
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.B5C09FAD-4524-07CE-8F4D-3612A70BC943]
+    // </editor-fold> 
+    public String getClieCiudad () {
+        return clieCiudad;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.16355A58-4D6D-9FE4-5F9B-3668CDEFE3DE]
+    // </editor-fold> 
+    public void setClieCiudad (String val) {
+        this.clieCiudad = val;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.80657691-B408-3EB7-924A-61439448035B]
+    // </editor-fold> 
+    public String getClieDNI () {
+        return clieDNI;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.4A50AE9C-3BBE-2E38-79DA-501EA0AF8F20]
+    // </editor-fold> 
+    public void setClieDNI (String val) {
+        this.clieDNI = val;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.E66538C8-7D2F-AF45-FD34-65FCBF9874AB]
+    // </editor-fold> 
+    public String getClieDireccion () {
+        return clieDireccion;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.65BE219F-2B20-A53B-32F7-70E72D88CEE0]
+    // </editor-fold> 
+    public void setClieDireccion (String val) {
+        this.clieDireccion = val;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.C74533D9-A333-A08B-343D-AE5E9A920411]
+    // </editor-fold> 
+    public String getClieEmail () {
+        return clieEmail;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.5EBDA0ED-C328-4B75-9AC8-747B79A8BEF8]
+    // </editor-fold> 
+    public void setClieEmail (String val) {
+        this.clieEmail = val;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.69C8658A-1231-0D77-E762-5BEED6E330D9]
+    // </editor-fold> 
+    public String getClieMaterno () {
+        return clieMaterno;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.307D70E7-2CBB-CC85-F041-96342B68D738]
+    // </editor-fold> 
+    public void setClieMaterno (String val) {
+        this.clieMaterno = val;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.488AD7E6-7EBD-D5BF-C832-5A6F88C996AF]
+    // </editor-fold> 
+    public String getClieNombre () {
+        return clieNombre;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.E1043627-E253-061B-7E51-24F369CF4106]
+    // </editor-fold> 
+    public void setClieNombre (String val) {
+        this.clieNombre = val;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.AB2ED00E-61E9-3712-487C-7FAAACCC13DF]
+    // </editor-fold> 
+    public String getCliePaterno () {
+        return cliePaterno;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.C7D1D8D8-6FF2-C8C2-0293-FA4FB55E1CB0]
+    // </editor-fold> 
+    public void setCliePaterno (String val) {
+        this.cliePaterno = val;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.BC4834E4-8E77-E741-7C06-87A33A4F58F9]
+    // </editor-fold> 
+    public String getClieTelefono () {
+        return clieTelefono;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.6AB92CDE-ADFD-9159-73FA-5CEA83C86726]
+    // </editor-fold> 
+    public void setClieTelefono (String val) {
+        this.clieTelefono = val;
+    }
+
+}
+

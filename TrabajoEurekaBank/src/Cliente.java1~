@@ -1,0 +1,88 @@
+
+public class Cliente {
+
+    private String cliePaterno;
+
+    private String clieMaterno;
+
+    private String clieNombre;
+
+    private String clieDNI;
+
+    private String clieCiudad;
+
+    private String clieDireccion;
+
+    private String clieTelefono;
+
+    private String clieEmail;
+
+    public Cliente () {
+    }
+
+    public String getClieCiudad () {
+        return clieCiudad;
+    }
+
+    public void setClieCiudad (String val) {
+        this.clieCiudad = val;
+    }
+
+    public String getClieDNI () {
+        return clieDNI;
+    }
+
+    public void setClieDNI (String val) {
+        this.clieDNI = val;
+    }
+
+    public String getClieDireccion () {
+        return clieDireccion;
+    }
+
+    public void setClieDireccion (String val) {
+        this.clieDireccion = val;
+    }
+
+    public String getClieEmail () {
+        return clieEmail;
+    }
+
+    public void setClieEmail (String val) {
+        this.clieEmail = val;
+    }
+
+    public String getClieMaterno () {
+        return clieMaterno;
+    }
+
+    public void setClieMaterno (String val) {
+        this.clieMaterno = val;
+    }
+
+    public String getClieNombre () {
+        return clieNombre;
+    }
+
+    public void setClieNombre (String val) {
+        this.clieNombre = val;
+    }
+
+    public String getCliePaterno () {
+        return cliePaterno;
+    }
+
+    public void setCliePaterno (String val) {
+        this.cliePaterno = val;
+    }
+
+    public String getClieTelefono () {
+        return clieTelefono;
+    }
+
+    public void setClieTelefono (String val) {
+        this.clieTelefono = val;
+    }
+
+}
+

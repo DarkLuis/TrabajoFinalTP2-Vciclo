@@ -1,0 +1,78 @@
+
+public class Empleado {
+
+    private String emplCodigo;
+
+    private String emplMaterno;
+
+    private String emplNombre;
+
+    private String Ciudad;
+
+    private String Direccion;
+
+    private String emplUsuario;
+
+    private String emplClave;
+
+    public Empleado () {
+    }
+
+    public String getCiudad () {
+        return Ciudad;
+    }
+
+    public void setCiudad (String val) {
+        this.Ciudad = val;
+    }
+
+    public String getDireccion () {
+        return Direccion;
+    }
+
+    public void setDireccion (String val) {
+        this.Direccion = val;
+    }
+
+    public String getEmplClave () {
+        return emplClave;
+    }
+
+    public void setEmplClave (String val) {
+        this.emplClave = val;
+    }
+
+    public String getEmplCodigo () {
+        return emplCodigo;
+    }
+
+    public void setEmplCodigo (String val) {
+        this.emplCodigo = val;
+    }
+
+    public String getEmplMaterno () {
+        return emplMaterno;
+    }
+
+    public void setEmplMaterno (String val) {
+        this.emplMaterno = val;
+    }
+
+    public String getEmplNombre () {
+        return emplNombre;
+    }
+
+    public void setEmplNombre (String val) {
+        this.emplNombre = val;
+    }
+
+    public String getEmplUsuario () {
+        return emplUsuario;
+    }
+
+    public void setEmplUsuario (String val) {
+        this.emplUsuario = val;
+    }
+
+}
+

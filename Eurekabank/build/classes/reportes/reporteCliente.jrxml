@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20">
+	<queryString>
+		<![CDATA[select chr_cliecodigo,vch_cliepaterno,vch_cliematerno,vch_clienombre,chr_cliedni,vch_clieciudad,
+	vch_cliedireccion,vch_clietelefono,vch_clieemail from cliente]]>
+	</queryString>
+	<field name="chr_cliecodigo" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vch_cliepaterno" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vch_cliematerno" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vch_clienombre" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="chr_cliedni" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vch_clieciudad" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vch_cliedireccion" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vch_clietelefono" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vch_clieemail" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="200" y="19" width="173" height="27" forecolor="#0066CC"/>
+				<textElement>
+					<font size="16" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[REPORTE CLIENTE]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch">
+			<staticText>
+				<reportElement x="457" y="13" width="100" height="20" forecolor="#CC0066"/>
+				<textElement>
+					<font size="12" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[EUREKABANK]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="13" width="51" height="19" forecolor="#CC0066"/>
+				<textElement>
+					<font isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[CÓDIGO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="63" y="13" width="56" height="32" forecolor="#CC0066"/>
+				<textElement>
+					<font isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[APELLIDO PATERNO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="119" y="13" width="56" height="32" forecolor="#CC0066"/>
+				<textElement>
+					<font isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[APELLIDO MATERNO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="175" y="13" width="68" height="32" forecolor="#CC0066"/>
+				<textElement>
+					<font isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[NOMBRE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="312" y="13" width="61" height="19" forecolor="#CC0066"/>
+				<textElement>
+					<font isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[CIUDAD]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="379" y="13" width="57" height="19" forecolor="#CC0066"/>
+				<textElement>
+					<font isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[DIRECCIÓN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="447" y="13" width="58" height="19" forecolor="#CC0066"/>
+				<textElement>
+					<font isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[TELEFONO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="517" y="13" width="38" height="19" forecolor="#CC0066"/>
+				<textElement>
+					<font isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[EMAIL]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="255" y="13" width="42" height="20" forecolor="#CC0066"/>
+				<textElement>
+					<font isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[DNI]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="95" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="34" width="51" height="57"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{chr_cliecodigo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="63" y="34" width="56" height="57"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{vch_cliepaterno}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="119" y="34" width="56" height="57"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{vch_cliematerno}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="175" y="34" width="68" height="57"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{vch_clienombre}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="255" y="34" width="42" height="57"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{chr_cliedni}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="312" y="34" width="61" height="57"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{vch_clieciudad}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="379" y="34" width="57" height="57"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{vch_cliedireccion}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="447" y="34" width="57" height="57"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{vch_clietelefono}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="517" y="34" width="38" height="57"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{vch_clieemail}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch">
+			<textField>
+				<reportElement x="424" y="21" width="80" height="20"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression class="java.lang.String"><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement x="504" y="21" width="40" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>
