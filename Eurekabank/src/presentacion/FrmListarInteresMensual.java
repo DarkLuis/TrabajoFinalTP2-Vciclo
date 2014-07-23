@@ -41,13 +41,13 @@ public class FrmListarInteresMensual extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         tblInteres = new javax.swing.JTable();
         btnSalir = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("LISTA INTERES MENSUAL");
+        setTitle("..::LISTADO DE INTERES MENSUAL::..");
 
-        btnListarInteresMensual.setFont(new java.awt.Font("Vrinda", 0, 14));
-        btnListarInteresMensual.setText("Listar Interés Mensual");
+        btnListarInteresMensual.setFont(new java.awt.Font("Vrinda", 1, 14)); // NOI18N
+        btnListarInteresMensual.setForeground(new java.awt.Color(0, 102, 0));
+        btnListarInteresMensual.setText("Listar");
         btnListarInteresMensual.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnListarInteresMensualActionPerformed(evt);
@@ -67,7 +67,8 @@ public class FrmListarInteresMensual extends javax.swing.JFrame {
         ));
         jScrollPane1.setViewportView(tblInteres);
 
-        btnSalir.setFont(new java.awt.Font("Vrinda", 0, 14));
+        btnSalir.setFont(new java.awt.Font("Vrinda", 1, 14)); // NOI18N
+        btnSalir.setForeground(new java.awt.Color(0, 102, 0));
         btnSalir.setText("Salir");
         btnSalir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -75,42 +76,32 @@ public class FrmListarInteresMensual extends javax.swing.JFrame {
             }
         });
 
-        jLabel1.setFont(new java.awt.Font("Vrinda", 1, 18));
-        jLabel1.setForeground(new java.awt.Color(0, 0, 255));
-        jLabel1.setText("LISTAR INTERÉS MENSUAL");
-
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(96, 96, 96)
-                .addComponent(jLabel1)
-                .addContainerGap(80, Short.MAX_VALUE))
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 351, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap())
+                        .addGap(20, 20, 20)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 351, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
+                        .addGap(99, 99, 99)
                         .addComponent(btnListarInteresMensual)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 73, Short.MAX_VALUE)
-                        .addComponent(btnSalir)
-                        .addGap(93, 93, 93))))
+                        .addGap(54, 54, 54)
+                        .addComponent(btnSalir)))
+                .addContainerGap(29, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(23, 23, 23)
-                .addComponent(jLabel1)
-                .addGap(27, 27, 27)
+                .addGap(25, 25, 25)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 159, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(27, 27, 27)
+                .addGap(36, 36, 36)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnSalir)
-                    .addComponent(btnListarInteresMensual))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(btnListarInteresMensual)
+                    .addComponent(btnSalir))
+                .addContainerGap(54, Short.MAX_VALUE))
         );
 
         pack();
@@ -177,7 +168,6 @@ public class FrmListarInteresMensual extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnListarInteresMensual;
     private javax.swing.JButton btnSalir;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable tblInteres;
     // End of variables declaration//GEN-END:variables

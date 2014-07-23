@@ -37,7 +37,6 @@ public class FrmParametro extends javax.swing.JFrame {
         txtEstado = new javax.swing.JTextField();
         txtValor = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
         btnSalir = new javax.swing.JButton();
         btnInsertar = new javax.swing.JButton();
         btnNuevo = new javax.swing.JButton();
@@ -48,20 +47,20 @@ public class FrmParametro extends javax.swing.JFrame {
         jLabel4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("TABLA PARAMETRO");
+        setTitle("..::REGISTRO DE PARAMETRO::..");
 
+        txtEstado.setBackground(new java.awt.Color(204, 255, 255));
         txtEstado.setEnabled(false);
 
+        txtValor.setBackground(new java.awt.Color(204, 255, 255));
         txtValor.setEnabled(false);
 
-        jLabel1.setFont(new java.awt.Font("Vrinda", 0, 14));
+        jLabel1.setFont(new java.awt.Font("Vrinda", 1, 14)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(102, 102, 255));
         jLabel1.setText("Código:");
 
-        jLabel5.setFont(new java.awt.Font("Vrinda", 1, 18)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(0, 0, 255));
-        jLabel5.setText("REGISTRO PARÁMETRO");
-
-        btnSalir.setFont(new java.awt.Font("Vrinda", 0, 14));
+        btnSalir.setFont(new java.awt.Font("Vrinda", 1, 14)); // NOI18N
+        btnSalir.setForeground(new java.awt.Color(0, 102, 0));
         btnSalir.setText("Salir");
         btnSalir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -69,7 +68,8 @@ public class FrmParametro extends javax.swing.JFrame {
             }
         });
 
-        btnInsertar.setFont(new java.awt.Font("Vrinda", 0, 14));
+        btnInsertar.setFont(new java.awt.Font("Vrinda", 1, 14)); // NOI18N
+        btnInsertar.setForeground(new java.awt.Color(0, 102, 0));
         btnInsertar.setText("Insertar");
         btnInsertar.setEnabled(false);
         btnInsertar.addActionListener(new java.awt.event.ActionListener() {
@@ -78,7 +78,8 @@ public class FrmParametro extends javax.swing.JFrame {
             }
         });
 
-        btnNuevo.setFont(new java.awt.Font("Vrinda", 0, 14));
+        btnNuevo.setFont(new java.awt.Font("Vrinda", 1, 14)); // NOI18N
+        btnNuevo.setForeground(new java.awt.Color(0, 102, 0));
         btnNuevo.setText("Nuevo");
         btnNuevo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -86,29 +87,31 @@ public class FrmParametro extends javax.swing.JFrame {
             }
         });
 
+        txtDescripcion.setBackground(new java.awt.Color(204, 255, 255));
         txtDescripcion.setEnabled(false);
 
-        jLabel3.setFont(new java.awt.Font("Vrinda", 0, 14)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Vrinda", 1, 14)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(102, 102, 255));
         jLabel3.setText("Valor:");
 
-        jLabel2.setFont(new java.awt.Font("Vrinda", 0, 14));
+        jLabel2.setFont(new java.awt.Font("Vrinda", 1, 14)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(102, 102, 255));
         jLabel2.setText("Descripción:");
 
+        txtCodigo.setBackground(new java.awt.Color(204, 255, 255));
         txtCodigo.setEnabled(false);
 
-        jLabel4.setFont(new java.awt.Font("Vrinda", 0, 14));
+        jLabel4.setFont(new java.awt.Font("Vrinda", 1, 14)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(102, 102, 255));
         jLabel4.setText("Estado:");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 336, Short.MAX_VALUE)
             .addGroup(layout.createSequentialGroup()
                 .addGap(37, 37, 37)
                 .addComponent(btnNuevo)
-                .addGap(63, 63, 63)
-                .addComponent(btnInsertar)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(btnSalir)
                 .addGap(29, 29, 29))
@@ -120,24 +123,19 @@ public class FrmParametro extends javax.swing.JFrame {
                     .addComponent(jLabel3)
                     .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(17, 17, 17)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(txtEstado)
-                    .addComponent(txtValor)
-                    .addComponent(txtDescripcion)
-                    .addComponent(txtCodigo, javax.swing.GroupLayout.DEFAULT_SIZE, 118, Short.MAX_VALUE))
-                .addContainerGap(79, Short.MAX_VALUE))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(80, 80, 80)
-                .addComponent(jLabel5)
-                .addContainerGap(58, Short.MAX_VALUE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(btnInsertar)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addComponent(txtEstado)
+                        .addComponent(txtValor)
+                        .addComponent(txtDescripcion)
+                        .addComponent(txtCodigo, javax.swing.GroupLayout.DEFAULT_SIZE, 118, Short.MAX_VALUE)))
+                .addContainerGap(80, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel5)
-                .addGap(18, 18, 18)
+                .addGap(23, 23, 23)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel1)
                     .addComponent(txtCodigo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -153,7 +151,7 @@ public class FrmParametro extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 17, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(txtEstado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 49, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 38, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnNuevo)
                     .addComponent(btnInsertar)
@@ -235,7 +233,6 @@ private void limpiarTextos() {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
     private javax.swing.JTextField txtCodigo;
     private javax.swing.JTextField txtDescripcion;
     private javax.swing.JTextField txtEstado;

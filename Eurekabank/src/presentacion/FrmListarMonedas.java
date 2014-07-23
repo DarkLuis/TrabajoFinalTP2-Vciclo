@@ -45,10 +45,9 @@ public class FrmListarMonedas extends javax.swing.JFrame {
         tblMonedas = new javax.swing.JTable();
         btnListarMoneda = new javax.swing.JButton();
         btnSalir = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("LISTA MONEDA");
+        setTitle("..::LISTADO DE MONEDAS::..");
 
         tblMonedas.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -63,16 +62,18 @@ public class FrmListarMonedas extends javax.swing.JFrame {
         ));
         scroll.setViewportView(tblMonedas);
 
-        btnListarMoneda.setFont(new java.awt.Font("Vrinda", 0, 14));
+        btnListarMoneda.setFont(new java.awt.Font("Vrinda", 1, 14)); // NOI18N
+        btnListarMoneda.setForeground(new java.awt.Color(0, 102, 0));
         btnListarMoneda.setMnemonic('L');
-        btnListarMoneda.setText("Listar Moneda");
+        btnListarMoneda.setText("Listar ");
         btnListarMoneda.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnListarMonedaActionPerformed(evt);
             }
         });
 
-        btnSalir.setFont(new java.awt.Font("Vrinda", 0, 14));
+        btnSalir.setFont(new java.awt.Font("Vrinda", 1, 14)); // NOI18N
+        btnSalir.setForeground(new java.awt.Color(0, 102, 0));
         btnSalir.setText("Salir");
         btnSalir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -80,15 +81,10 @@ public class FrmListarMonedas extends javax.swing.JFrame {
             }
         });
 
-        jLabel1.setFont(new java.awt.Font("Vrinda", 1, 18));
-        jLabel1.setForeground(new java.awt.Color(0, 0, 255));
-        jLabel1.setText("LISTAR MONEDAS");
-
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
             .addGroup(layout.createSequentialGroup()
                 .addGap(67, 67, 67)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
@@ -96,26 +92,19 @@ public class FrmListarMonedas extends javax.swing.JFrame {
                         .addComponent(btnListarMoneda, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(btnSalir))
-                    .addComponent(scroll, javax.swing.GroupLayout.PREFERRED_SIZE, 254, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(scroll, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 254, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(79, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(127, Short.MAX_VALUE)
-                .addComponent(jLabel1)
-                .addGap(124, 124, 124))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
             .addGroup(layout.createSequentialGroup()
-                .addGap(22, 22, 22)
-                .addComponent(jLabel1)
-                .addGap(37, 37, 37)
+                .addGap(34, 34, 34)
                 .addComponent(scroll, javax.swing.GroupLayout.PREFERRED_SIZE, 148, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addGap(36, 36, 36)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnSalir)
-                    .addComponent(btnListarMoneda))
-                .addContainerGap(19, Short.MAX_VALUE))
+                    .addComponent(btnListarMoneda)
+                    .addComponent(btnSalir))
+                .addContainerGap(53, Short.MAX_VALUE))
         );
 
         pack();
@@ -157,7 +146,6 @@ public class FrmListarMonedas extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnListarMoneda;
     private javax.swing.JButton btnSalir;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane scroll;
     private javax.swing.JTable tblMonedas;
     // End of variables declaration//GEN-END:variables

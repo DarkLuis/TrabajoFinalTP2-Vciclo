@@ -4,7 +4,15 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/USUARIO/Desktop/tp2/Eurekabank/src/datos/AsignadoDAL.java</file>
+            <file>file:/C:/Users/USUARIO/Desktop/EurekabankModificado/src/entidades/Moneda.java</file>
+            <file>file:/C:/Users/USUARIO/Desktop/EurekabankModificado/src/presentacion/FrmMovimiento.java</file>
+            <file>file:/C:/Users/USUARIO/Desktop/EurekabankModificado/src/presentacion/FrmParametro.java</file>
+            <file>file:/C:/Users/USUARIO/Desktop/EurekabankModificado/src/presentacion/FrmPrincipal.java</file>
+            <file>file:/C:/Users/USUARIO/Desktop/EurekabankModificado/src/presentacion/FrmTipoMovimiento.java</file>
+            <file>file:/C:/Users/USUARIO/Desktop/EurekabankModificado/src/reportes/ReporteAsignado.jrxml</file>
+            <file>file:/C:/Users/USUARIO/Desktop/EurekabankModificado/src/entidades/Cliente.java</file>
+            <file>file:/C:/Users/USUARIO/Desktop/EurekabankModificado/src/logica/ClienteBL.java</file>
+            <file>file:/C:/Users/USUARIO/Desktop/EurekabankModificado/src/datos/ClienteDAL.java</file>
         </group>
     </open-files>
 </project-private>

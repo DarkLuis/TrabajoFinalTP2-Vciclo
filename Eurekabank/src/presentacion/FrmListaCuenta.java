@@ -40,12 +40,12 @@ public class FrmListaCuenta extends javax.swing.JFrame {
         btnListar = new javax.swing.JButton();
         scroll = new javax.swing.JScrollPane();
         tblCuenta = new javax.swing.JTable();
-        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("LISTAR CUENTA");
+        setTitle("..::LISTADO DE CUENTAS::..");
 
-        btnSalir.setFont(new java.awt.Font("Vrinda", 0, 14));
+        btnSalir.setFont(new java.awt.Font("Vrinda", 1, 14)); // NOI18N
+        btnSalir.setForeground(new java.awt.Color(0, 102, 0));
         btnSalir.setText("Salir");
         btnSalir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -53,8 +53,9 @@ public class FrmListaCuenta extends javax.swing.JFrame {
             }
         });
 
-        btnListar.setFont(new java.awt.Font("Vrinda", 0, 14));
-        btnListar.setText("Listar Cuentas");
+        btnListar.setFont(new java.awt.Font("Vrinda", 1, 14)); // NOI18N
+        btnListar.setForeground(new java.awt.Color(0, 102, 0));
+        btnListar.setText("Listar ");
         btnListar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnListarActionPerformed(evt);
@@ -74,43 +75,33 @@ public class FrmListaCuenta extends javax.swing.JFrame {
         ));
         scroll.setViewportView(tblCuenta);
 
-        jLabel1.setFont(new java.awt.Font("Vrinda", 1, 18));
-        jLabel1.setForeground(new java.awt.Color(0, 0, 255));
-        jLabel1.setText("LISTAR CUENTA");
-
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 449, Short.MAX_VALUE)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(scroll, javax.swing.GroupLayout.DEFAULT_SIZE, 429, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(scroll, javax.swing.GroupLayout.DEFAULT_SIZE, 556, Short.MAX_VALUE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(46, 46, 46)
+                        .addComponent(btnListar)
+                        .addGap(177, 177, 177)
+                        .addComponent(btnSalir)
+                        .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
-            .addGroup(layout.createSequentialGroup()
-                .addGap(43, 43, 43)
-                .addComponent(btnListar)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 137, Short.MAX_VALUE)
-                .addComponent(btnSalir)
-                .addGap(93, 93, 93))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(160, Short.MAX_VALUE)
-                .addComponent(jLabel1)
-                .addGap(156, 156, 156))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 308, Short.MAX_VALUE)
             .addGroup(layout.createSequentialGroup()
-                .addGap(30, 30, 30)
-                .addComponent(jLabel1)
-                .addGap(34, 34, 34)
-                .addComponent(scroll, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(32, 32, 32)
+                .addGap(41, 41, 41)
+                .addComponent(scroll, javax.swing.GroupLayout.PREFERRED_SIZE, 167, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 47, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnListar)
                     .addComponent(btnSalir))
-                .addContainerGap(15, Short.MAX_VALUE))
+                .addGap(42, 42, 42))
         );
 
         pack();
@@ -167,7 +158,6 @@ public class FrmListaCuenta extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnListar;
     private javax.swing.JButton btnSalir;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane scroll;
     private javax.swing.JTable tblCuenta;
     // End of variables declaration//GEN-END:variables

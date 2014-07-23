@@ -13,6 +13,8 @@ package presentacion;
 import javax.swing.*;
 import logica.*;
 import static javax.swing.JOptionPane.showMessageDialog;
+
+
 /**
  *
  * @author SNS
@@ -34,41 +36,59 @@ public class FrmTipoMovimiento extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        btnNuevo = new javax.swing.JButton();
         txtEstado = new javax.swing.JTextField();
         txtAccion = new javax.swing.JTextField();
         txtDescripcion = new javax.swing.JTextField();
-        jLabel5 = new javax.swing.JLabel();
-        btnSalir = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
-        btnInsertar = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         txtCodigo = new javax.swing.JTextField();
+        btnSalir = new javax.swing.JButton();
+        btnInsertar = new javax.swing.JButton();
+        btnNuevo = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("TABLA TIPO MOVIMIENTO");
+        setTitle("..::REGISTRO DE TIPO DE MOVIMIENTO::..");
+        setBackground(new java.awt.Color(0, 255, 204));
+        setIconImages(getIconImages());
 
-        btnNuevo.setFont(new java.awt.Font("Vrinda", 0, 14));
-        btnNuevo.setText("Nuevo");
-        btnNuevo.addActionListener(new java.awt.event.ActionListener() {
+        txtEstado.setBackground(new java.awt.Color(204, 255, 255));
+        txtEstado.setEnabled(false);
+
+        txtAccion.setBackground(new java.awt.Color(204, 255, 255));
+        txtAccion.setEnabled(false);
+
+        txtDescripcion.setBackground(new java.awt.Color(204, 255, 255));
+        txtDescripcion.setEnabled(false);
+        txtDescripcion.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnNuevoActionPerformed(evt);
+                txtDescripcionActionPerformed(evt);
             }
         });
 
-        txtEstado.setEnabled(false);
+        jLabel2.setFont(new java.awt.Font("Vrinda", 1, 14)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(102, 102, 255));
+        jLabel2.setText("Descripción:");
 
-        txtAccion.setEnabled(false);
+        jLabel1.setFont(new java.awt.Font("Vrinda", 1, 14)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(102, 102, 255));
+        jLabel1.setText("Código:");
 
-        txtDescripcion.setEnabled(false);
+        jLabel4.setFont(new java.awt.Font("Vrinda", 1, 14)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(102, 102, 255));
+        jLabel4.setText("Estado:");
 
-        jLabel5.setFont(new java.awt.Font("Vrinda", 1, 18)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(0, 0, 255));
-        jLabel5.setText("REGISTRO TIPO MOVIMIENTO");
+        jLabel3.setFont(new java.awt.Font("Vrinda", 1, 14)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(102, 102, 255));
+        jLabel3.setText("Acción:");
 
-        btnSalir.setFont(new java.awt.Font("Vrinda", 0, 14));
+        txtCodigo.setBackground(new java.awt.Color(204, 255, 255));
+        txtCodigo.setEnabled(false);
+        txtCodigo.setSelectedTextColor(new java.awt.Color(204, 204, 204));
+
+        btnSalir.setFont(new java.awt.Font("Vrinda", 1, 14)); // NOI18N
+        btnSalir.setForeground(new java.awt.Color(0, 102, 0));
         btnSalir.setText("Salir");
         btnSalir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -76,10 +96,8 @@ public class FrmTipoMovimiento extends javax.swing.JFrame {
             }
         });
 
-        jLabel2.setFont(new java.awt.Font("Vrinda", 0, 14));
-        jLabel2.setText("Descripción:");
-
-        btnInsertar.setFont(new java.awt.Font("Vrinda", 0, 14)); // NOI18N
+        btnInsertar.setFont(new java.awt.Font("Vrinda", 1, 14)); // NOI18N
+        btnInsertar.setForeground(new java.awt.Color(0, 102, 0));
         btnInsertar.setText("Insertar");
         btnInsertar.setEnabled(false);
         btnInsertar.addActionListener(new java.awt.event.ActionListener() {
@@ -88,98 +106,82 @@ public class FrmTipoMovimiento extends javax.swing.JFrame {
             }
         });
 
-        jLabel1.setFont(new java.awt.Font("Vrinda", 0, 14)); // NOI18N
-        jLabel1.setText("Código:");
-
-        jLabel4.setFont(new java.awt.Font("Vrinda", 0, 14));
-        jLabel4.setText("Estado:");
-
-        jLabel3.setFont(new java.awt.Font("Vrinda", 0, 14));
-        jLabel3.setText("Acción:");
-
-        txtCodigo.setEnabled(false);
+        btnNuevo.setFont(new java.awt.Font("Vrinda", 1, 14)); // NOI18N
+        btnNuevo.setForeground(new java.awt.Color(0, 102, 0));
+        btnNuevo.setText("Nuevo");
+        btnNuevo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnNuevoActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 449, Short.MAX_VALUE)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(72, Short.MAX_VALUE)
-                .addComponent(jLabel5)
-                .addGap(131, 131, 131))
             .addGroup(layout.createSequentialGroup()
-                .addGap(88, 88, 88)
+                .addGap(25, 25, 25)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel2)
-                        .addContainerGap())
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(btnNuevo)
+                    .addComponent(jLabel3)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                         .addGroup(layout.createSequentialGroup()
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(btnNuevo)
-                                .addComponent(jLabel1))
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(btnInsertar)
-                                    .addGap(27, 27, 27)
-                                    .addComponent(btnSalir)
-                                    .addGap(98, 98, 98))
-                                .addGroup(layout.createSequentialGroup()
-                                    .addGap(18, 18, 18)
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                        .addComponent(txtDescripcion, javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(txtCodigo, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 82, Short.MAX_VALUE)
-                                        .addComponent(txtAccion, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 16, Short.MAX_VALUE)
-                                        .addComponent(txtEstado, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 20, Short.MAX_VALUE))
-                                    .addContainerGap(192, Short.MAX_VALUE))))
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel4)
-                            .addComponent(jLabel3)))))
+                            .addComponent(jLabel2)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(txtDescripcion, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(layout.createSequentialGroup()
+                            .addComponent(jLabel1)
+                            .addGap(58, 58, 58)
+                            .addComponent(txtCodigo, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jLabel4)
+                        .addGap(57, 57, 57)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(txtEstado, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtAccion, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(btnInsertar)
+                                .addGap(29, 29, 29)
+                                .addComponent(btnSalir)))))
+                .addGap(32, 32, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 356, Short.MAX_VALUE)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(24, 24, 24)
-                .addComponent(jLabel5)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(25, 25, 25)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(txtCodigo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel1))
-                .addGap(33, 33, 33)
+                .addGap(13, 13, 13)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2)
                     .addComponent(txtDescripcion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(34, 34, 34)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel3)
-                    .addComponent(txtAccion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(34, 34, 34)
+                    .addComponent(txtAccion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel3))
+                .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel4)
                     .addComponent(txtEstado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(57, 57, 57)
+                .addGap(44, 44, 44)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnNuevo)
-                    .addComponent(btnSalir)
-                    .addComponent(btnInsertar))
-                .addGap(28, 28, 28))
+                    .addComponent(btnNuevo, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnInsertar, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnSalir, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(27, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnNuevoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNuevoActionPerformed
-        limpiarTextos();
-        activar(true);
-        txtCodigo.requestFocus();
-}//GEN-LAST:event_btnNuevoActionPerformed
+    private void txtDescripcionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtDescripcionActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtDescripcionActionPerformed
 
     private void btnSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalirActionPerformed
         this.dispose();
-}//GEN-LAST:event_btnSalirActionPerformed
+    }//GEN-LAST:event_btnSalirActionPerformed
 
     private void btnInsertarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnInsertarActionPerformed
         String codigo, descripcion, accion, estado;
@@ -190,25 +192,31 @@ public class FrmTipoMovimiento extends javax.swing.JFrame {
         estado = txtEstado.getText();
         if(codigo != null && descripcion != null && accion != null && estado != null) {
             rpta = new TipoMovimientoBL().insertarTipoMovimiento(
-                    codigo, descripcion, accion, estado);
+                codigo, descripcion, accion, estado);
             switch(rpta) {
                 case 0:
                 case 1:
-                    limpiarTextos();
-                    activar(false);
-                    break;
+                limpiarTextos();
+                activar(false);
+                break;
                 case 2:
-                    txtCodigo.setText(null);
-                    txtCodigo.requestFocus();
-                    break;
+                txtCodigo.setText(null);
+                txtCodigo.requestFocus();
+                break;
                 case 3:
-                    limpiarTextos();
-                    txtCodigo.requestFocus();
-                    break;
+                limpiarTextos();
+                txtCodigo.requestFocus();
+                break;
             }
         } else
-            showMessageDialog(this,"Debe digitar datos","Aviso",2);
-}//GEN-LAST:event_btnInsertarActionPerformed
+        showMessageDialog(this,"Debe digitar datos","Aviso",2);
+    }//GEN-LAST:event_btnInsertarActionPerformed
+
+    private void btnNuevoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNuevoActionPerformed
+        limpiarTextos();
+        activar(true);
+        txtCodigo.requestFocus();
+    }//GEN-LAST:event_btnNuevoActionPerformed
 
     private void limpiarTextos() {
         txtCodigo.setText(null);
@@ -244,7 +252,6 @@ public class FrmTipoMovimiento extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
     private javax.swing.JTextField txtAccion;
     private javax.swing.JTextField txtCodigo;
     private javax.swing.JTextField txtDescripcion;

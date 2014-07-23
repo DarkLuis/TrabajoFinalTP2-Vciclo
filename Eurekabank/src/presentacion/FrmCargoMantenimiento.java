@@ -43,22 +43,27 @@ public class FrmCargoMantenimiento extends javax.swing.JFrame {
         BtnInsertar = new javax.swing.JButton();
         BtnNuevo = new javax.swing.JButton();
         BtnSalir = new javax.swing.JButton();
-        jLabel4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("..::REGISTRO DE CARGO DE MANTENIMIENTO::..");
 
-        jLabel1.setFont(new java.awt.Font("Vrinda", 0, 14));
+        jLabel1.setFont(new java.awt.Font("Vrinda", 1, 14)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(102, 102, 255));
         jLabel1.setText("Código de Moneda:");
 
-        jLabel2.setFont(new java.awt.Font("Vrinda", 0, 14));
+        jLabel2.setFont(new java.awt.Font("Vrinda", 1, 14)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(102, 102, 255));
         jLabel2.setText("Monto Máximo:");
 
-        jLabel3.setFont(new java.awt.Font("Vrinda", 0, 14));
+        jLabel3.setFont(new java.awt.Font("Vrinda", 1, 14)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(102, 102, 255));
         jLabel3.setText("Importe:");
 
+        TxtCod.setBackground(new java.awt.Color(204, 255, 255));
         TxtCod.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         TxtCod.setEnabled(false);
 
+        TxtMontoMax.setBackground(new java.awt.Color(204, 255, 255));
         TxtMontoMax.setEnabled(false);
         TxtMontoMax.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -66,9 +71,11 @@ public class FrmCargoMantenimiento extends javax.swing.JFrame {
             }
         });
 
+        TxtImporte.setBackground(new java.awt.Color(204, 255, 255));
         TxtImporte.setEnabled(false);
 
-        BtnInsertar.setFont(new java.awt.Font("Vrinda", 0, 14)); // NOI18N
+        BtnInsertar.setFont(new java.awt.Font("Vrinda", 1, 14)); // NOI18N
+        BtnInsertar.setForeground(new java.awt.Color(0, 102, 0));
         BtnInsertar.setText("Insertar");
         BtnInsertar.setEnabled(false);
         BtnInsertar.addActionListener(new java.awt.event.ActionListener() {
@@ -77,7 +84,8 @@ public class FrmCargoMantenimiento extends javax.swing.JFrame {
             }
         });
 
-        BtnNuevo.setFont(new java.awt.Font("Vrinda", 0, 14)); // NOI18N
+        BtnNuevo.setFont(new java.awt.Font("Vrinda", 1, 14)); // NOI18N
+        BtnNuevo.setForeground(new java.awt.Color(0, 102, 0));
         BtnNuevo.setText("Nuevo");
         BtnNuevo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -85,7 +93,8 @@ public class FrmCargoMantenimiento extends javax.swing.JFrame {
             }
         });
 
-        BtnSalir.setFont(new java.awt.Font("Vrinda", 0, 14));
+        BtnSalir.setFont(new java.awt.Font("Vrinda", 1, 14)); // NOI18N
+        BtnSalir.setForeground(new java.awt.Color(0, 102, 0));
         BtnSalir.setText("Salir");
         BtnSalir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -93,48 +102,36 @@ public class FrmCargoMantenimiento extends javax.swing.JFrame {
             }
         });
 
-        jLabel4.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel4.setFont(new java.awt.Font("Vrinda", 1, 18));
-        jLabel4.setForeground(new java.awt.Color(0, 0, 255));
-        jLabel4.setText("REGISTRO DE CARGOMANTENIMIENTO");
-
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
+                .addGap(40, 40, 40)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(40, 40, 40)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel2)
-                            .addComponent(jLabel3)
-                            .addComponent(jLabel1))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(TxtImporte, javax.swing.GroupLayout.DEFAULT_SIZE, 223, Short.MAX_VALUE)
-                            .addComponent(TxtMontoMax, javax.swing.GroupLayout.DEFAULT_SIZE, 223, Short.MAX_VALUE)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addComponent(BtnNuevo)
-                                .addGap(52, 52, 52)
-                                .addComponent(BtnSalir, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(17, 17, 17))
-                            .addComponent(TxtCod, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(48, 48, 48))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(28, 28, 28)
-                        .addComponent(BtnInsertar))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(60, 60, 60)
-                        .addComponent(jLabel4)))
+                    .addComponent(jLabel2)
+                    .addComponent(jLabel3)
+                    .addComponent(jLabel1))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(TxtImporte)
+                    .addComponent(TxtMontoMax)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addComponent(BtnNuevo)
+                        .addGap(52, 52, 52)
+                        .addComponent(BtnSalir, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(17, 17, 17))
+                    .addComponent(TxtCod, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(24, Short.MAX_VALUE))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(28, 28, 28)
+                .addComponent(BtnInsertar)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel4)
-                .addGap(21, 21, 21)
+                .addGap(31, 31, 31)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(TxtCod, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -146,7 +143,7 @@ public class FrmCargoMantenimiento extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel3)
                     .addComponent(TxtImporte, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 51, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 32, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(BtnInsertar)
                     .addComponent(BtnSalir)
@@ -266,6 +263,5 @@ private void BtnNuevoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRS
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
     // End of variables declaration//GEN-END:variables
 }

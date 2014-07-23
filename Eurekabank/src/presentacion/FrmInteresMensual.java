@@ -36,7 +36,6 @@ public class FrmInteresMensual extends javax.swing.JFrame {
 
         BtnSalir = new javax.swing.JButton();
         BtnNuevo = new javax.swing.JButton();
-        jLabel3 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         BtnInsertar = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
@@ -44,8 +43,10 @@ public class FrmInteresMensual extends javax.swing.JFrame {
         TxtCod = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("..::REGISTRO DE INTERES MENSUAL::..");
 
-        BtnSalir.setFont(new java.awt.Font("Vrinda", 0, 14));
+        BtnSalir.setFont(new java.awt.Font("Vrinda", 1, 14)); // NOI18N
+        BtnSalir.setForeground(new java.awt.Color(0, 102, 0));
         BtnSalir.setText("Salir");
         BtnSalir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -53,7 +54,8 @@ public class FrmInteresMensual extends javax.swing.JFrame {
             }
         });
 
-        BtnNuevo.setFont(new java.awt.Font("Vrinda", 0, 14));
+        BtnNuevo.setFont(new java.awt.Font("Vrinda", 1, 14)); // NOI18N
+        BtnNuevo.setForeground(new java.awt.Color(0, 102, 0));
         BtnNuevo.setText("Nuevo");
         BtnNuevo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -61,14 +63,12 @@ public class FrmInteresMensual extends javax.swing.JFrame {
             }
         });
 
-        jLabel3.setFont(new java.awt.Font("Vrinda", 1, 18));
-        jLabel3.setForeground(new java.awt.Color(0, 0, 255));
-        jLabel3.setText("REGISTRO DE INTERÉS MENSUAL");
-
-        jLabel1.setFont(new java.awt.Font("Vrinda", 0, 14));
+        jLabel1.setFont(new java.awt.Font("Vrinda", 1, 14)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(102, 102, 255));
         jLabel1.setText("Código:");
 
-        BtnInsertar.setFont(new java.awt.Font("Vrinda", 0, 14));
+        BtnInsertar.setFont(new java.awt.Font("Vrinda", 1, 14)); // NOI18N
+        BtnInsertar.setForeground(new java.awt.Color(0, 102, 0));
         BtnInsertar.setText("Insertar");
         BtnInsertar.setEnabled(false);
         BtnInsertar.addActionListener(new java.awt.event.ActionListener() {
@@ -77,11 +77,14 @@ public class FrmInteresMensual extends javax.swing.JFrame {
             }
         });
 
-        jLabel2.setFont(new java.awt.Font("Vrinda", 0, 14));
+        jLabel2.setFont(new java.awt.Font("Vrinda", 1, 14)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(102, 102, 255));
         jLabel2.setText("Importe:");
 
+        TxtImporte.setBackground(new java.awt.Color(204, 255, 255));
         TxtImporte.setEnabled(false);
 
+        TxtCod.setBackground(new java.awt.Color(204, 255, 255));
         TxtCod.setEnabled(false);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -89,47 +92,46 @@ public class FrmInteresMensual extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
+                .addGap(22, 22, 22)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(62, 62, 62)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel2)
-                                    .addComponent(jLabel1))
-                                .addGap(35, 35, 35)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(TxtImporte)
-                                    .addComponent(TxtCod, javax.swing.GroupLayout.DEFAULT_SIZE, 125, Short.MAX_VALUE)))
-                            .addComponent(jLabel3)))
+                        .addComponent(jLabel2)
+                        .addGap(18, 18, 18)
+                        .addComponent(TxtImporte, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(45, 45, 45)
+                        .addComponent(BtnNuevo, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
                         .addComponent(BtnInsertar)
-                        .addGap(68, 68, 68)
-                        .addComponent(BtnNuevo)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(BtnSalir)
-                .addGap(13, 13, 13))
+                        .addGap(18, 18, 18)
+                        .addComponent(BtnSalir, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jLabel1)
+                        .addGap(23, 23, 23)
+                        .addComponent(TxtCod, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(36, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(28, 28, 28)
-                .addComponent(jLabel3)
-                .addGap(37, 37, 37)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(TxtCod, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel1))
-                .addGap(42, 42, 42)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel2)
-                    .addComponent(TxtImporte, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 38, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(BtnInsertar)
-                    .addComponent(BtnSalir)
-                    .addComponent(BtnNuevo))
-                .addGap(57, 57, 57))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(21, 21, 21)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel1)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(2, 2, 2)
+                                .addComponent(TxtCod, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(26, 26, 26)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel2)
+                            .addComponent(TxtImporte, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(127, 127, 127)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(BtnInsertar)
+                            .addComponent(BtnNuevo)
+                            .addComponent(BtnSalir))))
+                .addContainerGap(27, Short.MAX_VALUE))
         );
 
         pack();
@@ -232,6 +234,5 @@ private void Nuevo() {
     private javax.swing.JTextField TxtImporte;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
     // End of variables declaration//GEN-END:variables
 }

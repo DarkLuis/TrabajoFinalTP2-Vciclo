@@ -41,16 +41,19 @@ public class FrmCostoMovimiento extends javax.swing.JFrame {
         BtnInsertar = new javax.swing.JButton();
         BtnNuevo = new javax.swing.JButton();
         BtnSalir = new javax.swing.JButton();
-        jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("..::REGISTRO DE COSTO DE MOVIMIENTO::..");
 
-        jLabel1.setFont(new java.awt.Font("Vrinda", 0, 14)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Vrinda", 1, 14)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(102, 102, 255));
         jLabel1.setText("Código");
 
-        jLabel2.setFont(new java.awt.Font("Vrinda", 0, 14)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Vrinda", 1, 14)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(102, 102, 255));
         jLabel2.setText("Importe");
 
+        TxtCod.setBackground(new java.awt.Color(204, 255, 255));
         TxtCod.setEnabled(false);
         TxtCod.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -58,9 +61,11 @@ public class FrmCostoMovimiento extends javax.swing.JFrame {
             }
         });
 
+        TxtImporte.setBackground(new java.awt.Color(204, 255, 255));
         TxtImporte.setEnabled(false);
 
-        BtnInsertar.setFont(new java.awt.Font("Vrinda", 0, 14)); // NOI18N
+        BtnInsertar.setFont(new java.awt.Font("Vrinda", 1, 14)); // NOI18N
+        BtnInsertar.setForeground(new java.awt.Color(0, 102, 0));
         BtnInsertar.setText("Insertar");
         BtnInsertar.setEnabled(false);
         BtnInsertar.addActionListener(new java.awt.event.ActionListener() {
@@ -69,7 +74,8 @@ public class FrmCostoMovimiento extends javax.swing.JFrame {
             }
         });
 
-        BtnNuevo.setFont(new java.awt.Font("Vrinda", 0, 14)); // NOI18N
+        BtnNuevo.setFont(new java.awt.Font("Vrinda", 1, 14)); // NOI18N
+        BtnNuevo.setForeground(new java.awt.Color(0, 102, 0));
         BtnNuevo.setText("Nuevo");
         BtnNuevo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -77,7 +83,8 @@ public class FrmCostoMovimiento extends javax.swing.JFrame {
             }
         });
 
-        BtnSalir.setFont(new java.awt.Font("Vrinda", 0, 14)); // NOI18N
+        BtnSalir.setFont(new java.awt.Font("Vrinda", 1, 14)); // NOI18N
+        BtnSalir.setForeground(new java.awt.Color(0, 102, 0));
         BtnSalir.setText("Salir");
         BtnSalir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -85,58 +92,46 @@ public class FrmCostoMovimiento extends javax.swing.JFrame {
             }
         });
 
-        jLabel3.setFont(new java.awt.Font("Vrinda", 1, 18));
-        jLabel3.setForeground(new java.awt.Color(0, 0, 255));
-        jLabel3.setText("REGISTRO COSTOMOVIMIENTO");
-
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(36, 36, 36)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(BtnInsertar)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(jLabel2)
-                        .addComponent(jLabel1)))
-                .addGap(56, 56, 56)
+                .addGap(45, 45, 45)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(BtnNuevo)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 55, Short.MAX_VALUE)
-                        .addComponent(BtnSalir, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(48, 48, 48))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addComponent(TxtImporte, javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(TxtCod, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 118, Short.MAX_VALUE))
-                        .addContainerGap(115, Short.MAX_VALUE))))
+                    .addComponent(jLabel1)
+                    .addComponent(jLabel2))
+                .addGap(34, 34, 34)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(TxtImporte, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(TxtCod, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(0, 107, Short.MAX_VALUE))
             .addGroup(layout.createSequentialGroup()
-                .addGap(56, 56, 56)
-                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 288, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(56, Short.MAX_VALUE))
+                .addGap(37, 37, 37)
+                .addComponent(BtnInsertar)
+                .addGap(27, 27, 27)
+                .addComponent(BtnNuevo)
+                .addGap(27, 27, 27)
+                .addComponent(BtnSalir, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(24, 24, 24)
-                .addComponent(jLabel3)
+                .addGap(37, 37, 37)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel1)
+                    .addComponent(TxtCod, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(TxtCod, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel1)
-                        .addGap(40, 40, 40)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel2)
-                            .addComponent(TxtImporte, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 63, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel2)
+                    .addComponent(TxtImporte, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(29, 29, 29)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(BtnInsertar)
                     .addComponent(BtnNuevo)
                     .addComponent(BtnSalir))
-                .addGap(57, 57, 57))
+                .addContainerGap(42, Short.MAX_VALUE))
         );
 
         pack();
@@ -241,6 +236,5 @@ private void Nuevo() {
     private javax.swing.JTextField TxtImporte;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
     // End of variables declaration//GEN-END:variables
 }
