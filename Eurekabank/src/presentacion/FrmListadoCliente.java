@@ -58,7 +58,10 @@ public class FrmListadoCliente extends javax.swing.JFrame {
 
         btnListadoCliente.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         btnListadoCliente.setForeground(new java.awt.Color(0, 102, 0));
-        btnListadoCliente.setText("Listar");
+        btnListadoCliente.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/listar.png"))); // NOI18N
+        btnListadoCliente.setText("LISTAR");
+        btnListadoCliente.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnListadoCliente.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         btnListadoCliente.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnListadoClienteActionPerformed(evt);
@@ -91,13 +94,14 @@ public class FrmListadoCliente extends javax.swing.JFrame {
             }
         ));
         jScrollPane1.setViewportView(tblCliente);
-        if (tblCliente.getColumnModel().getColumnCount() > 0) {
-            tblCliente.getColumnModel().getColumn(0).setResizable(false);
-        }
+        tblCliente.getColumnModel().getColumn(0).setResizable(false);
 
         btnSalir.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         btnSalir.setForeground(new java.awt.Color(0, 102, 0));
-        btnSalir.setText("Salir");
+        btnSalir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/salir.png"))); // NOI18N
+        btnSalir.setText("SALIR");
+        btnSalir.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnSalir.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         btnSalir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnSalirActionPerformed(evt);
@@ -115,8 +119,8 @@ public class FrmListadoCliente extends javax.swing.JFrame {
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 725, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(239, 239, 239)
-                        .addComponent(btnListadoCliente, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(89, 89, 89)
+                        .addComponent(btnListadoCliente)
+                        .addGap(123, 123, 123)
                         .addComponent(btnSalir, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
@@ -128,7 +132,7 @@ public class FrmListadoCliente extends javax.swing.JFrame {
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 275, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(btnListadoCliente, javax.swing.GroupLayout.DEFAULT_SIZE, 33, Short.MAX_VALUE)
+                    .addComponent(btnListadoCliente, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(btnSalir, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );

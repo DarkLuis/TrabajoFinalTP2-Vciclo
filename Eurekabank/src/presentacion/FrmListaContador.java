@@ -57,7 +57,10 @@ public class FrmListaContador extends javax.swing.JFrame {
 
         btnListar.setFont(new java.awt.Font("Vrinda", 1, 14)); // NOI18N
         btnListar.setForeground(new java.awt.Color(0, 102, 0));
-        btnListar.setText("Listar");
+        btnListar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/listar.png"))); // NOI18N
+        btnListar.setText("LISTAR");
+        btnListar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnListar.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         btnListar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnListarActionPerformed(evt);
@@ -66,7 +69,11 @@ public class FrmListaContador extends javax.swing.JFrame {
 
         btnSalir.setFont(new java.awt.Font("Vrinda", 1, 14)); // NOI18N
         btnSalir.setForeground(new java.awt.Color(0, 102, 0));
-        btnSalir.setText("Salir");
+        btnSalir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/salir.png"))); // NOI18N
+        btnSalir.setText("SALIR");
+        btnSalir.setToolTipText("");
+        btnSalir.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnSalir.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         btnSalir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnSalirActionPerformed(evt);
@@ -97,7 +104,7 @@ public class FrmListaContador extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(75, 75, 75)
                 .addComponent(btnListar)
-                .addGap(71, 71, 71)
+                .addGap(73, 73, 73)
                 .addComponent(btnSalir)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );

@@ -101,7 +101,7 @@ public class FrmTipoMovimiento extends javax.swing.JFrame {
         btnSalir.setFont(new java.awt.Font("Vrinda", 1, 14)); // NOI18N
         btnSalir.setForeground(new java.awt.Color(0, 102, 0));
         btnSalir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/salir.png"))); // NOI18N
-        btnSalir.setText("Salir");
+        btnSalir.setText("SALIR");
         btnSalir.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btnSalir.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         btnSalir.addActionListener(new java.awt.event.ActionListener() {
@@ -113,7 +113,7 @@ public class FrmTipoMovimiento extends javax.swing.JFrame {
         btnInsertar.setFont(new java.awt.Font("Vrinda", 1, 14)); // NOI18N
         btnInsertar.setForeground(new java.awt.Color(0, 102, 0));
         btnInsertar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/guardar.png"))); // NOI18N
-        btnInsertar.setText("Insertar");
+        btnInsertar.setText("GUARDAR");
         btnInsertar.setEnabled(false);
         btnInsertar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btnInsertar.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
@@ -126,7 +126,7 @@ public class FrmTipoMovimiento extends javax.swing.JFrame {
         btnNuevo.setFont(new java.awt.Font("Vrinda", 1, 14)); // NOI18N
         btnNuevo.setForeground(new java.awt.Color(0, 102, 0));
         btnNuevo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/nuevo.png"))); // NOI18N
-        btnNuevo.setText("Nuevo");
+        btnNuevo.setText("NUEVO");
         btnNuevo.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btnNuevo.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         btnNuevo.addActionListener(new java.awt.event.ActionListener() {

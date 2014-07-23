@@ -78,8 +78,11 @@ public class FrmCostoMovimiento extends javax.swing.JFrame {
 
         BtnInsertar.setFont(new java.awt.Font("Vrinda", 1, 14)); // NOI18N
         BtnInsertar.setForeground(new java.awt.Color(0, 102, 0));
-        BtnInsertar.setText("Insertar");
+        BtnInsertar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/guardar.png"))); // NOI18N
+        BtnInsertar.setText("GUARDAR");
         BtnInsertar.setEnabled(false);
+        BtnInsertar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        BtnInsertar.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         BtnInsertar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 BtnInsertarActionPerformed(evt);
@@ -88,7 +91,10 @@ public class FrmCostoMovimiento extends javax.swing.JFrame {
 
         BtnNuevo.setFont(new java.awt.Font("Vrinda", 1, 14)); // NOI18N
         BtnNuevo.setForeground(new java.awt.Color(0, 102, 0));
-        BtnNuevo.setText("Nuevo");
+        BtnNuevo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/nuevo.png"))); // NOI18N
+        BtnNuevo.setText("NUEVO");
+        BtnNuevo.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        BtnNuevo.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         BtnNuevo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 BtnNuevoActionPerformed(evt);
@@ -97,7 +103,10 @@ public class FrmCostoMovimiento extends javax.swing.JFrame {
 
         BtnSalir.setFont(new java.awt.Font("Vrinda", 1, 14)); // NOI18N
         BtnSalir.setForeground(new java.awt.Color(0, 102, 0));
-        BtnSalir.setText("Salir");
+        BtnSalir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/salir.png"))); // NOI18N
+        BtnSalir.setText("SALIR");
+        BtnSalir.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        BtnSalir.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         BtnSalir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 BtnSalirActionPerformed(evt);
@@ -117,7 +126,7 @@ public class FrmCostoMovimiento extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(TxtImporte, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(TxtCod, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(0, 107, Short.MAX_VALUE))
+                .addGap(0, 0, Short.MAX_VALUE))
             .addGroup(layout.createSequentialGroup()
                 .addGap(37, 37, 37)
                 .addComponent(BtnInsertar)
@@ -143,7 +152,7 @@ public class FrmCostoMovimiento extends javax.swing.JFrame {
                     .addComponent(BtnInsertar)
                     .addComponent(BtnNuevo)
                     .addComponent(BtnSalir))
-                .addContainerGap(42, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
